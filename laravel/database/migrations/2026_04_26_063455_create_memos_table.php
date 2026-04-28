@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('memos', function (Blueprint $table) {
             $table->id();
-            $table->string('body');
+            $table->text('body');
             $table->timestamps();
         });
     }
